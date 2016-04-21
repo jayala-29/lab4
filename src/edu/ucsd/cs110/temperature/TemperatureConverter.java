@@ -27,10 +27,30 @@ public class TemperatureConverter {
             switch(temp_in[1].toLowerCase().charAt(0))
             {
                 case 'c':
-                    inputTemp = new Temperature(temp_val);
+                    inputTemp = new Temperature(temp_val) {
+                        @java.lang.Override
+                        public Temperature toCelsius() {
+                            return null;
+                        }
+
+                        @java.lang.Override
+                        public Temperature toFahrenheit() {
+                            return null;
+                        }
+                    };
                     break;
                 case 'f':
-                    inputTemp = new Temperature(temp_val);
+                    inputTemp = new Temperature(temp_val) {
+                        @java.lang.Override
+                        public Temperature toCelsius() {
+                            return null;
+                        }
+
+                        @java.lang.Override
+                        public Temperature toFahrenheit() {
+                            return null;
+                        }
+                    };
                     break;
                 default:
                     System.out.println("Invalid entry!!\n\n");

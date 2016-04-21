@@ -9,6 +9,15 @@ public class Fahrenheit extends Temperature {
         super(t);
     }
 
+    @java.lang.Override
+    public Temperature toCelsius() {
+        return null;
+    }
+
+    @java.lang.Override
+    public Temperature toFahrenheit() {
+        return null;
+    }
 
 
     public String toString()
